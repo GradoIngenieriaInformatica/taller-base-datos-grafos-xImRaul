@@ -1,0 +1,1 @@
+MATCH (p:Persona)-[:AMIGO_DE]->(amigo:Persona)-[:TRABAJA_EN]->(proy:Proyecto) RETURN p.nombre AS persona, amigo.nombre AS amigo, proy.nombre AS proyecto
